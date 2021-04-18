@@ -1,0 +1,29 @@
+{  
+  "ts-node": {
+    "transpileOnly": true
+  },
+  "compilerOptions": {                     
+    "target": "es6",                               
+    "module": "commonjs",                          
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": ".",    
+    "baseUrl": ".",              
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@core/*": ["./src/core/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@main/*": ["./src/main/*"],
+      "@presenters/*": ["./src/presenters/*"],
+      "@repositories/*": ["./src/repositories/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@useCases/*": ["./src/useCases/*"],
+      "@tests/*": ["./tests/*"],
+    },          
+    "esModuleInterop": true,                       
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
